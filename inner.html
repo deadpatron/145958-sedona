@@ -19,7 +19,34 @@
      <main class="conteiner">
      	<section class="filter-hotels">
      		<h1 class="hidden-visiable">Подбор отеля в Седоне</h1>
-     		<!--форма фильтра-->     		
+     		<!--форма фильтра-->  
+     		<form>
+     			<fieldset class="rooms-infrastructure">
+     				<legend>Инфрастуктура:</legend>
+     				<input type="checkbox" name="pool" id="infrastructure-pool" value="pool" checked>
+     				<label for="infrastructure-pool">Бассен</label>
+     				<input type="checkbox" name="parking" id="infrastructure-parking" value="parking">
+     				<label for="infrastructure-parking">Паркинг</label>
+     				<input type="checkbox" name="wifi" id="infrastructure-wifi" value="wifi">
+     				<label for="infrastructure-wifi">wi-fi</label>
+     			</fieldset>
+     			<fieldset class="rooms-type-search">
+     				<legend>Тип жилья</legend>
+     				<input type="checkbox" name="hotel" id="hotel-type" value="hotel" checked>
+     				<label for="hotel-type">Гостиница</label>
+     				<input type="checkbox" name="motel" id="motel-type" value="motel" checked>
+     				<label for="motel-type">Мотель</label>
+     				<input type="checkbox" name="apartments" id="apartments-type" value="apartments" checked>
+     				<label for="apartments-type">Апартаменты</label>
+     			</fieldset>
+     			<fieldset class="prise">
+     				<legend>Стоимость в сутки(р):</legend>
+     				<label for="prise-range"><span class="prise-min">от 0 </span>&#x7c;<span class="prise-max"> до 3000</span></label>
+     				<input type="range" name="prise" id="prise-range" min="0" max="3000" value="2500">
+     			</fieldset>
+     			<button type="submit" class="rooms-picking-button">Показать</button>
+
+     		</form>   		
      	</section>
      	<section class="filter-hotels-result">
      		<p class="filter-hotels-quantity">
