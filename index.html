@@ -78,28 +78,32 @@
      		<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
      	</div>
      	<article class="order">
-     		<h2>ПОИСК ГОСТИНИЦЫ В седоне</h2>
+     		<button class="rooms-search-button">
+                    <h2>ПОИСК ГОСТИНИЦЫ В седоне</h2>
+               </button>
                <form class="rooms-search" method="post">
                     <div class="rooms-search-arrival">
                          <label for="rooms-arrival-date">Дата заезда</label>
                          <input type="text" name="arrival-date" id="rooms-arrival-date" value="24 апреля 2017">
+                         <button class="date-icon">Выбор даты заезда</button>
                     </div>
                     <div class="rooms-search-departure">
-                         <label for="rooms-departure-date">Дата выезда</label>
+                         <label for="rooms-departure-date"><span class="visually-hidden">Дата выезда</span></label>
                          <input type="text" name="departure-date" id="rooms-departure-date" value="4 июля 2017">
+                         <button class="date-icon"><span class="visually-hidden">Выбор даты выезда</span></button>
                     </div>
                     <div class="amount-people amount-people-adults">
                          <label for="amount-adults">Взрослые</label>
                          <!--Не знаю как лучше реализовать эти поля, через батоны, а потом через js придать им смысл, или ещё как можно?-->
-                         <button type="button" class="adults-sum-button">-</button>
+                         <button type="button" class="adults-sum-button"><span class="visually-hidden">Уменьшить количество взрослых</span></button>
                          <input type="text" name="adults" class="adults-sum" id="amount-adults" value="2" pattern="[0-9]{1}">                    
-                         <button type="button" class="adults-sum-button">+</button>
+                         <button type="button" class="adults-sum-button"><span class="visually-hidden">Добаивть взрослого</span></button>
                     </div>
                     <div class="amount-people amount-people-children">
                          <label for="amount-children">Дети:</label>
-                         <button type="button" class="children-sum-button">-</button>
+                         <button type="button" class="children-sum-button"><span class="visually-hidden">Уменьшить количество детей</span></button>
                          <input type="text" name="children" class="children-sum" id="amount-children" value="0" pattern="[0-9]{1}">
-                         <button type="button" class="children-sum-button">+</button>
+                         <button type="button" class="children-sum-button"><span class="visually-hidden">Добавить ребёнка</span></button>
                     </div>
                     <button type="submit" class="rooms-search-button">Найти</button>
                     
