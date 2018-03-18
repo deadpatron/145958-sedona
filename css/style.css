@@ -1,0 +1,109 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "PT Snans", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	color: #000000;
+	text-transform: uppercase;
+	text-align: center;
+
+	background-color: #F2F2F2;
+}
+
+a {
+	text-decoration: none;
+}
+
+.visually-hidden {
+	margin: 0;
+	padding: 0;
+
+	font-size: 0;
+}
+
+.main-navigation {
+	font-weight: bold;
+	line-height: 26px;
+
+	background-color: #ffffff
+}
+
+.site-navigation {
+	list-style: none;
+}
+
+.site-navigation a {
+	color: #000000;
+}
+
+.advantages-title {
+	background: #ffffff;
+
+	line-height: 26px;
+}
+
+.advantages-title .slogan {
+	font-size: 21px;
+	font-weight: bold;
+}
+
+.advantages-title .features-text {
+	color: #333333;
+}
+
+.features-list {
+	list-style: none;
+}
+
+.main-feature {
+	background-color: #81B3D2;
+
+	color: #ffffff;
+}
+
+ .main-feature strong {
+	font-size: 21px;
+	font-weight: bold;
+}
+
+.benefits,
+.other-features {
+	list-style: inherit;
+
+	background-color: #ffffff;
+	color: #333333;
+}
+
+.benefits b,
+.other-features strong  {
+	font-size: 21px;
+	font-weight: bold;
+	color: #000000;
+}
+
+.other-features {
+	background-color: #eeeeee;
+}
+
+.rooms-search-button {
+	font: inherit;
+
+	border-style: none;
+}
+
+.lead-text {
+	background-color: #ffffff;
+}
+
+.lead-text b {
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 36px;
+}
+
+.lead-text p {
+	line-height: 24px;
+	color: #333333;
+}
