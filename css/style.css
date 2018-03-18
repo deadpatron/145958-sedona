@@ -181,7 +181,12 @@ a {
 }
 
 .footer-index {
-	background-color: #ffffff;
+	background-image: url("../img/map.png");
+	background-repeat: no-repeat;
+}
+
+.footer-content {
+	background-color: rgba(255,255,255,0.9);
 }
 
 .social-list {
