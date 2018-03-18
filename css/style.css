@@ -107,3 +107,73 @@ a {
 	line-height: 24px;
 	color: #333333;
 }
+
+.order {
+	background-color: #ffffff;
+}
+
+.rooms-search-button {
+	background-color: #766357;
+}
+
+
+.rooms-search-button strong {
+	font: inherit;
+
+	margin: 0;
+	padding: 0;
+
+	color: #ffffff;
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 26px;
+	text-transform: uppercase;
+
+	border-style: none;
+}
+
+.rooms-search-button:hover {
+	background-color: #604E43;
+}
+
+.rooms-search-button strong:active,
+.rooms-search-button:active {
+	background-color: #503E33;
+	color: rgba(255,255,255,0.3);
+}
+
+.rooms-search {
+	line-height: 26px;
+	font-weight: bold;
+}
+
+.rooms-search input {
+	font: inherit;
+	font-size: 14px;
+	line-height: auto;
+	text-transform: uppercase;
+
+	border-style: none;
+
+	background-color: #F2F2F2;
+}
+
+.rooms-search .rooms-search-button:last-of-type {
+	background-color: #81B3D2;
+	
+	font: inherit;
+	font-size: 21px;
+	font-weight: bold;
+	color: #ffffff;
+	line-height: 26px;
+}
+
+.rooms-search .rooms-search-button:last-of-type:hover {
+	background-color: #669EC0;
+}
+
+.rooms-search .rooms-search-button:last-of-type:active {
+	background-color: #5496BD;
+
+	color: rgba(255,255,255,0.3);
+}
