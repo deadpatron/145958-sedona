@@ -246,8 +246,129 @@ a {
 	color: #000000;
 }
 
+.filter-hotels-quantity {
+	font-weight: bold;
+	font-size: 21px;
+	line-height: 26px;
+}
 
-.footer-index {
+.filter-hotels-result {
+	font-size: 12px;
+	line-height: 18px;
+
+	background-color: #ffffff;
+
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.filter-result-sort {
+	list-style: none;
+}
+
+.filter-result-sort a {
+	color: rgba(0,0,0,0.3);
+	border-bottom: 1px dotted #81B3D2;
+}
+
+.current-result-sort a {
+	color: #81B3D2;
+}
+
+.filter-result-sort a:hover {
+	color: #81B3D2;
+}
+
+.filter-result-sort a:active {
+	color: #000000;
+}
+
+.sort-buttons a {
+	color: rgba(0,0,0,0.3);
+}
+
+.sort-buttons a:hover {
+	color: #231F20;
+}
+
+.sort-buttons a:active {
+	color: #81B3D2;
+}
+
+a+.active-sort {
+	color: #81B3D2;
+}
+
+.access-hotels {
+	background-color: #ffffff;
+
+	list-style: none;
+}
+
+.access-hotels li {
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.access-hotels li>h2 {
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 26px;
+}
+
+.rooms-type,
+.rooms-prise {
+	color: #333333;
+	text-align: left;
+}
+
+.rooms-rate {
+	color: #666666;
+
+	background-color: #F2F2F2;
+}
+
+a.rooms-info {
+	color: #ffffff;
+	font-weight: bold;
+
+	background-color: #81B3D2;
+}
+
+a.rooms-info:hover {
+	background-color: #669ec0;
+}
+
+a.rooms-info:active {
+	background-color: #5496bd;
+
+	color: rgba(255,255,255,0.3);
+}
+
+a.rooms-book {
+	color: #ffffff;
+	font-weight: bold;
+
+	background-color: #766357;
+}
+
+a.rooms-book:hover {
+	background-color: #604e43;
+}
+
+a.rooms-book:active {
+	background-color: #503e33;
+
+	color: rgba(255,255,255,0.3);
+}
+
+.rooms-4stars,
+.rooms-3stars,
+.rooms-2stars {
+	background-image: url("../img/star.svg");
+	background-repeat: repeat-x;
+}
+
+.footer-index,
+.footer-inner {
 	background-image: url("../img/map.png");
 	background-repeat: no-repeat;
 }
@@ -260,6 +381,7 @@ a {
 	list-style: none;
 }
 
+.social-list a,
 .social-list a:visited {
 	color: #ffffff;
 }
