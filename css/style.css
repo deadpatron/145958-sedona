@@ -23,20 +23,33 @@ a {
 	font-size: 0;
 }
 
-.main-navigation {
+.main-navigation:not(.inner) {
 	font-weight: bold;
 	line-height: 26px;
 
-	background-color: #ffffff
+	background-color: #ffffff;
+	background-image: url("../img/sedona-index.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.main-navigation .inner {
+	background-color: #ffffff;
+
+	font-weight: bold;
+	line-height: 26px;
 }
 
 .site-navigation {
 	list-style: none;
+	background-color: #ffffff;
 }
 
 .site-navigation a {
 	color: #000000;
 }
+
+
 
 .advantages-title {
 	background: #ffffff;
@@ -179,6 +192,50 @@ a {
 
 	color: rgba(255,255,255,0.3);
 }
+
+.search-form-inner {
+	background-color: #33383C;
+	background-image: url("../img/filter background-min.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	
+	color: #ffffff;
+}
+
+.search-form-inner fieldset {
+	border: none;
+}
+
+.search-form-inner legend {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.search-form-inner input:disabled + label {
+	opacity: 0.5;
+}
+
+.prise-range,
+.rooms-picking-button {
+	border: 2px solid #FDFEFE;
+	border-radius: 3px;
+	box-shadow: 0 0 1px 0,
+
+	background-color: transparent;
+
+	color: #ffffff;
+}
+
+.rooms-picking-button a {
+	font: inherit;
+}
+
+.rooms-picking-button:hover {
+	background-color: #ffffff;
+
+	color: #000000;
+}
+
 
 .footer-index {
 	background-image: url("../img/map.png");

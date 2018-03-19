@@ -8,9 +8,9 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 <body>
 	     <header>
-     	<nav class="main-navigation">
+     	<nav class="main-navigation inner">
      		<a href="index.html"><img src="img/index-logo.png" alt="Логотип сервиса подбора отлелей Седона" width="138" height="70"></a>
-     		<ul class="site-navigation">
+     		<ul class="site-navigation inner">
      			<li><a href="info.html">ИНФОРМАЦИЯ</a></li>
      			<li><a href="content.html">ФОТО И ВИДЕО</a></li>
      			<li><a href="map.html">КАРТА ШТАТА</a></li>
@@ -22,7 +22,7 @@
      	<section class="filter-hotels">
      		<h1 class="visually-hidden">Подбор отеля в Седоне</h1>
      		<!--форма фильтра-->  
-     		<form method="post">
+     		<form method="post" class="search-form-inner">
      			<fieldset class="rooms-infrastructure">
      				<legend>Инфрастуктура:</legend>
      				<input type="checkbox" name="pool" id="infrastructure-pool" value="pool" checked>
@@ -43,10 +43,10 @@
      			</fieldset>
      			<fieldset class="prise">
      				<legend>Стоимость в сутки(р):</legend>
-     				<label for="prise-range"><span class="prise-min">от 0 </span>&#x7c;<span class="prise-max"> до 3000</span></label>
+     				<label for="prise-range"><span class="prise-range">от 0 &#x7c; до 3000</span></label>
      				<input type="range" name="prise" id="prise-range" min="0" max="3000" value="2500">
      			</fieldset>
-     			<button type="submit" class="rooms-picking-button">Показать</button>
+     			<a href="#" class="rooms-picking-button">Показать</a>
 
      		</form>   		
      	</section>
