@@ -9,14 +9,19 @@
   </head>
   <body>
 
-     <header>
-     	<nav class="main-navigation">
-     		<a href="#"><img src="img/index-logo.png" alt="Логотип сервиса подбора отлелей Седона" width="138" height="70"></a>
-     		<ul class="site-navigation">
-     			<li><a href="info.html">ИНФОРМАЦИЯ</a></li>
-     			<li><a href="content.html">ФОТО И ВИДЕО</a></li>
-     			<li><a href="map.html">КАРТА ШТАТА</a></li>
-     			<li><a href="inner.html">ГОСТИНИЦЫ</a></li>
+     <header class="container">
+     	<nav class="main-navigation navigation-column">
+     		   <a href="#"><img src="img/index-logo.png" alt="Логотип сервиса подбора отлелей Седона" width="138" height="70"></a>
+               
+     		<ul class="site-navigation navigation-column">
+     			<div class="list-column">
+                         <li><a href="info.html">ИНФОРМАЦИЯ</a></li>
+                         <li><a href="content.html">ФОТО И ВИДЕО</a></li>
+                    </div>
+                    <div class="list-column">
+                         <li><a href="map.html">КАРТА ШТАТА</a></li>
+                         <li><a href="inner.html">ГОСТИНИЦЫ</a></li>  
+                         </div>          
      		</ul>
      	</nav>
      </header> 
@@ -28,7 +33,7 @@
      		<div class="advantages-title">
                     <h2 class="visually-hidden">Преимущества</h2>
                     <p class="slogan">
-                         Седона - небольшой городок в Аризоне, заслуживающий большего!
+                         Седона &#8212; небольшой городок в Аризоне,<br>заслуживающий большего!
                     </p>
                     <p class="features-text">
                          Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
@@ -36,11 +41,13 @@
                </div>
      		<ul class="features-list">
      			<li class="main-feature first-feature">
-     				<p><strong>НАСТОЯЩИЙ<br>ГОРОДОК</strong></p>
-     				<span class="features-number"> &#8212; №1 &#8212;</span>
-     				<p>СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+     				<div class="features-column">
+                              <p><strong>НАСТОЯЩИЙ<br>ГОРОДОК</strong></p>
+                              <span class="features-number"> &#8212; №1 &#8212;</span>
+                              <p>СЕДОНА — НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ,<br>ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+                         </div>
      				<img src="img/tipical-town-min.jpg" alt="город без туристов" width="800" height="256">
-     				 <ul class="benefits">
+     				<ul class="benefits">
      				 	<li>
      				 		<p><b>Жилье</b></p>
      				 		<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
