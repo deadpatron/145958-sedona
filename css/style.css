@@ -42,6 +42,8 @@ a {
 	background-image: url("../img/sedona-index.png");
 	background-repeat: no-repeat;
 	background-position: top;
+	background-size: 1200 800;
+
 
 }
 
@@ -52,22 +54,14 @@ a {
 	line-height: 26px;
 }
 
-.main-navigation a {
-	background-color: #ffffff;
+.main-navigation>a {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
 
-	width: 200px;
-	height: 56px;
 
-	order: 2;
 }
 
-.site-navigation:first-child {
-	order: 1;
-}
-
-.site-navigation:last-child {
-	order: 3;
-}
 
 
 .site-navigation {
@@ -81,9 +75,11 @@ a {
 }
 
 .site-navigation li {
-	width: 239px;
-	padding-top: 15px;
+	width: 170px;
+	padding-top: 14px;
 	padding-bottom: 15px;
+	padding-left: 35px;
+	padding-right: 35px;
 }
 
 
@@ -92,16 +88,16 @@ a {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: flex-start;
+	align-items: center;
 
 }
-
-
 
 .list-column {
 	display: flex;
-
 }
+
+
+
 
 .site-navigation a {
 	color: #000000;
@@ -124,6 +120,7 @@ a {
 .advantages-title {
 	margin-top: 0;
 	padding-top: 0;
+	padding-bottom: 25px;
 
 	line-height: 26px;
 }
@@ -133,30 +130,53 @@ a {
 	font-weight: bold;
 
 	padding-top: 30px;
+	padding-bottom: 25px;
+	margin-bottom: 0;
 }
 
 .advantages-title .features-text {
+	margin-top: 0;
+	padding-top: 0;
+	padding-bottom: 10px;
+
 	color: #333333;
 }
 
 .features-list {
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
+
 }
 
-.features-column {
-	width: 350px;
+.features-column,
+.benefits li,
+.other-features-list {
+	width: 300px;
+	margin: 0;
+	padding-right: 50px;
+	padding-left: 50px;
 }
 
 .features-column p {
+	margin: 0;
+	padding-bottom: 25px;
+	padding-top: 15px;
+
+	line-height: 20px;
 }
+
 
 .main-feature {
 	background-color: #81B3D2;
+
 
 	color: #ffffff;
 
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	flex-wrap: wrap;
 }
 
@@ -167,8 +187,9 @@ a {
 }
 
 .benefits,
-.other-features {
-	padding-top: 100px;
+.other-features-list {
+	padding-left: 0;
+	padding-top: 130px;
 
 	list-style: inherit;
 
@@ -178,7 +199,12 @@ a {
 	flex-grow: 1;
 
 	display: flex;
-	align-items: baseline;
+	flex-direction: space-between;
+	align-items: center;
+}
+
+.benefits li {
+	flex-direction: space-between;
 }
 
 .features-column {
@@ -193,9 +219,9 @@ a {
 	content: "";
 	background-image: url("../img/icon-1.svg");
 	background-repeat: no-repeat;
-	background-position: bottom;
+	background-position: top;
 
-	padding-top: 65px;
+	padding-top: 70px;
 	padding-bottom: 0;
 	padding-right: 40px;
 	padding-left: 40px;
@@ -203,11 +229,11 @@ a {
 
 .benefits li:nth-child(2)::before {
 	content: "";
-	background-image: url("../img/icon-2.svg");
+	background-image: url("../img/icon-3.svg");
 	background-repeat: no-repeat;
-	background-position: bottom;
+	background-position: top;
 
-	padding-top: 65px;
+	padding-top: 70px;
 	padding-bottom: 0;
 	padding-right: 40px;
 	padding-left: 40px;
@@ -215,11 +241,11 @@ a {
 
 .benefits li:nth-child(3)::before {
 	content: "";
-	background-image: url("../img/icon-3.svg");
+	background-image: url("../img/icon-2.svg");
 	background-repeat: no-repeat;
-	background-position: bottom;
+	background-position: top;
 
-	padding-top: 65px;
+	padding-top: 70px;
 	padding-bottom: 0;
 	padding-right: 40px;
 	padding-left: 40px;
