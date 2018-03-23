@@ -7,16 +7,20 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 <body>
-	     <header>
-     	<nav class="main-navigation inner">
-     		<a href="index.html"><img src="img/index-logo.png" alt="Логотип сервиса подбора отлелей Седона" width="138" height="70"></a>
-     		<ul class="site-navigation inner">
-     			<li><a href="info.html">ИНФОРМАЦИЯ</a></li>
-     			<li><a href="content.html">ФОТО И ВИДЕО</a></li>
-     			<li><a href="map.html">КАРТА ШТАТА</a></li>
-     			<li class="site-navigation-current"><a href="inner.html">ГОСТИНИЦЫ</a></li>
-     		</ul>
-     	</nav>
+     <header class="container">
+          <nav class="main-navigation inner">
+               <a href="index.html"><img src="img/index-logo.png" alt="Логотип сервиса подбора отлелей Седона" width="138" height="70"></a>           
+               <ul class="site-navigation navigation-column">
+                    <div class="list-column">
+                         <li><a href="info.html">ИНФОРМАЦИЯ</a></li>
+                         <li><a href="content.html">ФОТО И ВИДЕО</a></li>
+                    </div>
+                    <div class="list-column">
+                         <li><a href="map.html">КАРТА ШТАТА</a></li>
+                         <li class="site-navigation-current"><a href="inner.html">ГОСТИНИЦЫ</a></li>  
+                         </div>          
+               </ul>
+          </nav>
      </header> 
      <main class="conteiner">
      	<section class="filter-hotels">
@@ -100,7 +104,7 @@
      		</ul>
      	</section>
      </main>
-     <footer class="footer-index">
+     <footer class="footer-container">
             <div class="footer-content">
                <p class="social-lead">
                   #visitSEDONA
