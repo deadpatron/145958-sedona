@@ -26,22 +26,22 @@
      		<!--форма фильтра-->  
      		<form method="post" class="search-form-inner">
      			<fieldset class="rooms-infrastructure inner-form">
-     				<legend>Инфрастуктура:</legend>
-     				<input type="checkbox" name="pool" id="infrastructure-pool" value="pool" checked>
-     				<label for="infrastructure-pool">Бассен</label>
-     				<input type="checkbox" name="parking" id="infrastructure-parking" value="parking">
-     				<label for="infrastructure-parking">Паркинг</label>
-     				<input type="checkbox" name="wifi" id="infrastructure-wifi" value="wifi">
-     				<label for="infrastructure-wifi">wi-fi</label>
+     				<legend>Инфраструктура:</legend>
+     				<input class="visually-hidden hidden-checkbox" type="checkbox" name="pool" id="infrastructure-pool" value="pool" checked>
+     				<label class="checkbox" for="infrastructure-pool">Бассен</label>
+     				<input class="visually-hidden hidden-checkbox" type="checkbox" name="parking" id="infrastructure-parking" value="parking">
+     				<label class="checkbox" for="infrastructure-parking">Паркинг</label>
+     				<input class="visually-hidden hidden-checkbox" type="checkbox" name="wifi" id="infrastructure-wifi" value="wifi">
+     				<label class="checkbox" for="infrastructure-wifi">wi-fi</label>
      			</fieldset>
      			<fieldset class="rooms-type-search inner-form">
-     				<legend>Тип жилья</legend>
-     				<input type="checkbox" name="hotel" id="hotel-type" value="hotel" checked>
-     				<label for="hotel-type">Гостиница</label>
-     				<input type="checkbox" name="motel" id="motel-type" value="motel" checked>
-     				<label for="motel-type">Мотель</label>
-     				<input type="checkbox" name="apartments" id="apartments-type" value="apartments" checked>
-     				<label for="apartments-type">Апартаменты</label>
+     				<legend>Тип жилья:</legend>
+     				<input class="visually-hidden hidden-checkbox" type="checkbox" name="hotel" id="hotel-type" value="hotel" checked>
+     				<label class="checkbox" for="hotel-type">Гостиница</label>
+     				<input class="visually-hidden hidden-checkbox" type="checkbox" name="motel" id="motel-type" value="motel" checked>
+     				<label class="checkbox" for="motel-type">Мотель</label>
+     				<input class="visually-hidden hidden-checkbox" type="checkbox" name="apartments" id="apartments-type" value="apartments" checked>
+     				<label class="checkbox" for="apartments-type">Апартаменты</label>
      			</fieldset>
                     <div class="filter-range inner-form">
                          <div class="filter-range-title">Стоимость в сутки (р):</div>
@@ -72,8 +72,8 @@
                          <li><a href="#">ПО РЕЙТИНГУ</a></li>
                     </ul>
                     <div class="sort-buttons">
-                         <a href="#" class="button-sort-top"><span class="visully-hidden">Сортировка вверх</span></a>
-                         <a href="#" class="button-sort-bottom active-sort"><span class="visually-hidden">Сортировка вниз</span></a>        
+                         <a href="#" class="button-sort-top"><span class="visually-hidden">Сортировка вверх</span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></a>
+                         <a href="#" class="button-sort-bottom active-sort"><span class="visually-hidden">Сортировка вниз</span><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg></a>        
                     </div>
                </div>
      		<ul class="access-hotels">
