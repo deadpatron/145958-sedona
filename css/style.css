@@ -125,7 +125,8 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation a:hover,
-.access-column a:hover {
+.access-column a.rooms-info:hover,
+a.hotel-name:hover {
 	color: #81B3D2;
 }
 
@@ -870,6 +871,11 @@ a+.active-sort path {
 	fill: #81B3D2;
 }
 
+.hotel-image {
+	margin-right: 30px;
+
+}
+
 .access-hotels {
 	background-color: #ffffff;
 
@@ -885,16 +891,34 @@ a+.active-sort path {
 .access-hotels li {
 	border-bottom: 1px solid #e5e5e5;
 
+	height: 90px;
+
 	padding: 30px 70px;
 	padding-left: 71px;
 
 	display: flex;
 }
 
+.access-column {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
 .access-column h2,
 .access-column p {
 	margin: 0;
-	padding-bottom: 5px;
+}
+
+.column p {
+	display: inline-block;
+
+	padding-right: 33px;
+}
+
+.column:last-child {
+    margin-bottom: 3px;
 }
 
 .access-column a {
@@ -928,6 +952,10 @@ a.rooms-info {
 	font-weight: bold;
 
 	background-color: #81B3D2;
+	
+	padding: 5px 17px;
+
+	min-height: 27px;
 }
 
 a.rooms-info:hover {
@@ -945,6 +973,10 @@ a.rooms-book {
 	font-weight: bold;
 
 	background-color: #766357;
+
+	min-height: 27px;
+
+	padding: 5px 17px;
 }
 
 a.rooms-book:hover {
@@ -962,9 +994,26 @@ a.rooms-book:active {
 .rooms-2stars {
 	background-image: url("../img/star.svg");
 	background-repeat: repeat-x;
+
+	margin: 0;
+	padding: 0;
+
+	min-height: 17px;
+
+	align-self: flex-end;
 }
 
+.rooms-4stars {
+	width: 72px;
+}
 
+.rooms-3stars {
+	width: 54px;
+}
+
+.rooms-2stars {
+	width: 36px;
+}
 
 .footer-container {
 	background-color: rgba(255,255,255,0.9);
