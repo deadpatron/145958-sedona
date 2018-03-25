@@ -124,11 +124,13 @@ input[type="radio"].visually-hidden {
 	color: #766357;
 }
 
-.site-navigation a:hover {
+.site-navigation a:hover,
+.access-column a:hover {
 	color: #81B3D2;
 }
 
-.site-navigation a:active  {
+.site-navigation a:active,
+.access-column a:active  {
 	color: rgba(0,0,0,0.3);
 }
 
@@ -230,6 +232,7 @@ input[type="radio"].visually-hidden {
 
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 .benefits p {
@@ -811,6 +814,8 @@ input[type="radio"].visually-hidden {
 
 	display: flex;
 	align-items: center;
+
+	padding-left: 71px;
 }
 
 .filter-result-sort {
@@ -870,15 +875,18 @@ a+.active-sort path {
 
 	list-style: none;
 
+	margin: 0;
+	padding: 0;
+
 	display: flex;
 	flex-direction: column;
-
 }
 
 .access-hotels li {
 	border-bottom: 1px solid #e5e5e5;
 
 	padding: 30px 70px;
+	padding-left: 71px;
 
 	display: flex;
 }
@@ -887,6 +895,10 @@ a+.active-sort path {
 .access-column p {
 	margin: 0;
 	padding-bottom: 5px;
+}
+
+.access-column a {
+	color: #000000;
 }
 
 .access-column:last-child {
