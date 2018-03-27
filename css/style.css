@@ -91,7 +91,7 @@ input[type="radio"].visually-hidden {
 .site-navigation li {
 	width: 110px;
 	padding-top: 14px;
-	padding-bottom: 15px;
+	padding-bottom: 16px;
 	padding-left: 65px;
 	padding-right: 70px;
 }
@@ -140,7 +140,7 @@ a.hotel-name:hover {
 .advantages-title {
 	margin-top: 0;
 	padding-top: 0;
-	padding-bottom: 25px;
+	padding-bottom: 51px;
 
 	line-height: 26px;
 }
@@ -149,15 +149,14 @@ a.hotel-name:hover {
 	font-size: 21px;
 	font-weight: bold;
 
-	padding-top: 51px;
-	padding-bottom: 25px;
-	margin: 0;
+	padding-top: 48px;
+    padding-bottom: 27px;
+    margin: 0;
 }
 
 .advantages-title .features-text {
 	margin: 0;
-	padding-top: 0;
-	padding-bottom: 24px;
+	padding: 0;
 
 	color: #333333;
 }
@@ -186,18 +185,26 @@ a.hotel-name:hover {
 	margin: 0;
 	padding-right: 50px;
 	padding-left: 50px;
-	padding-bottom: 60px;
-	padding-top: 150px;
+	padding-bottom: 62px;
+	padding-top: 148px;
 
 	position: relative;
 }
 
 .features-column p {
 	margin: 0;
-	padding-bottom: 28px;
-    padding-top: 15px;
+}
 
-	line-height: 20px;
+.features-column p:first-child {
+	padding-bottom: 19px;
+}
+
+.features-column p:nth-child(2) {
+	padding-bottom: 21px;
+}
+
+.features-column p:last-child {
+	padding-bottom: 29px;
 }
 
 
@@ -316,8 +323,7 @@ a.hotel-name:hover {
 
 .other-features-list {
 	padding-top: 50px;
-	padding-bottom: 40px;
-	margin-bottom: 20px;
+	padding-bottom: 36px;
 
 	background-color: #eeeeee;
 }
@@ -353,7 +359,7 @@ a.hotel-name:hover {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 47px;
-	margin-top: 48px;
+	margin-top: 50px;
 
 	width: 445px;
 }
@@ -389,7 +395,7 @@ a.hotel-name:hover {
 .main-footer-container {
 	background-image: url("../img/map.png");
 	background-repeat: no-repeat;
-	background-position: bottom;
+    background-position: bottom;
 }
 /*
 пока думаю как разместить фон
@@ -435,9 +441,13 @@ a.hotel-name:hover {
 
 
 .rooms-search {
+    width: 458px;
+
 	line-height: 26px;
 	font-weight: bold;
 
+	margin-left: auto;
+    margin-right: auto;
 	padding: 55px 0 25px 0;
 
 	display: flex;
@@ -446,7 +456,9 @@ a.hotel-name:hover {
 
 
 .form-container {
-	width: 458px;
+	width: 568px;
+    box-shadow: 0 14px 35px -15px grey;
+    padding-bottom: 27px;
 }
 
 .rooms-search input {
@@ -460,7 +472,6 @@ a.hotel-name:hover {
 	background-color: #F2F2F2;
 
 	width: 100%;
-    padding-top: 2px;
     padding-left: 12px;
 }
 
@@ -484,6 +495,8 @@ a.hotel-name:hover {
 
 }
 
+
+
 .form-button {
 	margin: 0;
 	padding: 0;
@@ -497,13 +510,6 @@ a.hotel-name:hover {
 	width: 38px;
 	height: 38px;
 
-}
-
-.form-icon {
-	margin: 0;
-	padding: 0;
-	width: 22px;
-	height: 22px;
 }
 
 .form-column+.amount-people-adults {
@@ -547,43 +553,43 @@ a.hotel-name:hover {
 }
 
 
-.adults-sub-button .form-icon,
-.children-sub-button .form-icon {
+.adults-sub-button,
+.children-sub-button {
 	background-image: url("../img/minus.png");
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-.adults-sub-button .form-icon:hover,
-.children-sub-button .form-icon:hover {
+.adults-sub-button:hover,
+.children-sub-button:hover {
 	background-image: url("../img/minus-hover.png");
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-.adults-sub-button .form-icon:active,
-.children-sub-button .form-icon:active {
+.adults-sub-button:active,
+.children-sub-button:active {
 	background-image: url("../img/minus-active.png");
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-.adults-sup-button .form-icon,
-.children-sup-button .form-icon {
+.adults-sup-button,
+.children-sup-button {
 	background-image: url("../img/plus.png");
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-.adults-sup-button .form-icon:hover,
-.children-sup-button .form-icon:hover {
+.adults-sup-button:hover,
+.children-sup-button:hover {
 	background-image: url("../img/plus-hover.png");
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-.adults-sup-button .form-icon:active,
-.children-sup-button .form-icon:active {
+.adults-sup-button:active,
+.children-sup-button:active {
 	background-image: url("../img/plus-active.png");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -607,7 +613,7 @@ a.hotel-name:hover {
 
 .search-button {
     padding-top: 14px;
-    padding-bottom: 16px;
+    padding-bottom: 18px;
 
     background-color: #81B3D2;
 
@@ -1128,15 +1134,14 @@ a.rooms-book:active {
 
 .footer-container {
 	background-color: rgba(255,255,255,0.9);
-	min-height: 100px;
 
 	display: flex;
-	justify-content: space-between;
-	align-items: baseline;
+	flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
 
-	padding-top: 10px;
-    padding-bottom: 9px;
-}
+    padding-top: 35px;
+    padding-bottom: 36px;}
 
 .social-list {
 	list-style: none;
@@ -1176,7 +1181,7 @@ a.rooms-book:active {
 
 	margin: 0;
 	margin-left: 125px;
-	margin-top: 35px;
+	margin-bottom: 12px;
 
 	font-size: 21px;
 	line-height: 26px;
