@@ -91,7 +91,7 @@ input[type="radio"].visually-hidden {
 .site-navigation li {
 	width: 110px;
 	padding-top: 14px;
-	padding-bottom: 15px;
+	padding-bottom: 16px;
 	padding-left: 65px;
 	padding-right: 70px;
 }
@@ -140,7 +140,7 @@ a.hotel-name:hover {
 .advantages-title {
 	margin-top: 0;
 	padding-top: 0;
-	padding-bottom: 25px;
+	padding-bottom: 51px;
 
 	line-height: 26px;
 }
@@ -149,15 +149,14 @@ a.hotel-name:hover {
 	font-size: 21px;
 	font-weight: bold;
 
-	padding-top: 51px;
-	padding-bottom: 25px;
-	margin: 0;
+	padding-top: 48px;
+    padding-bottom: 27px;
+    margin: 0;
 }
 
 .advantages-title .features-text {
 	margin: 0;
-	padding-top: 0;
-	padding-bottom: 24px;
+	padding: 0;
 
 	color: #333333;
 }
@@ -173,20 +172,39 @@ a.hotel-name:hover {
 
 }
 
-.features-column,
+.features-column {
+	width: 300px;
+	margin: 0;
+	padding-right: 50px;
+	padding-left: 50px;
+	padding-bottom: 30px;
+}
+
 .benefits li {
 	width: 300px;
 	margin: 0;
 	padding-right: 50px;
 	padding-left: 50px;
+	padding-bottom: 62px;
+	padding-top: 148px;
+
+	position: relative;
 }
 
 .features-column p {
 	margin: 0;
-	padding-bottom: 28px;
-    padding-top: 15px;
+}
 
-	line-height: 20px;
+.features-column p:first-child {
+	padding-bottom: 19px;
+}
+
+.features-column p:nth-child(2) {
+	padding-bottom: 21px;
+}
+
+.features-column p:last-child {
+	padding-bottom: 29px;
 }
 
 
@@ -198,7 +216,7 @@ a.hotel-name:hover {
 
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-end;
 	flex-wrap: wrap;
 }
 
@@ -220,9 +238,6 @@ a.hotel-name:hover {
 
 .benefits {
 	padding-left: 0;
-	padding-top: 70px;
-
-	min-height: 260px;
 
 	list-style: inherit;
 
@@ -232,7 +247,7 @@ a.hotel-name:hover {
 	flex-grow: 1;
 
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
 	flex-wrap: wrap;
 }
 
@@ -254,10 +269,15 @@ a.hotel-name:hover {
 	background-repeat: no-repeat;
 	background-position: top;
 
-	padding-top: 70px;
 	padding-bottom: 0;
 	padding-right: 40px;
 	padding-left: 40px;
+
+	position: absolute;
+    top: 62px;
+    right: 160px;
+
+    height: 72px;	
 }
 
 .benefits li:nth-child(2)::before {
@@ -266,10 +286,15 @@ a.hotel-name:hover {
 	background-repeat: no-repeat;
 	background-position: top;
 
-	padding-top: 70px;
 	padding-bottom: 0;
 	padding-right: 40px;
 	padding-left: 40px;
+
+	position: absolute;
+	top: 63px;
+    right: 161px;
+
+    height: 72px;
 }
 
 .benefits li:nth-child(3)::before {
@@ -278,10 +303,15 @@ a.hotel-name:hover {
 	background-repeat: no-repeat;
 	background-position: top;
 
-	padding-top: 70px;
 	padding-bottom: 0;
 	padding-right: 40px;
 	padding-left: 40px;
+
+	position: absolute;
+    top: 58px;
+    right: 159px;
+
+    height: 76px;
 }
 
 .benefits b,
@@ -293,8 +323,7 @@ a.hotel-name:hover {
 
 .other-features-list {
 	padding-top: 50px;
-	padding-bottom: 40px;
-	margin-bottom: 20px;
+	padding-bottom: 36px;
 
 	background-color: #eeeeee;
 }
@@ -330,7 +359,7 @@ a.hotel-name:hover {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 47px;
-	margin-top: 48px;
+	margin-top: 50px;
 
 	width: 445px;
 }
@@ -366,7 +395,7 @@ a.hotel-name:hover {
 .main-footer-container {
 	background-image: url("../img/map.png");
 	background-repeat: no-repeat;
-	background-position: bottom;
+    background-position: bottom;
 }
 /*
 пока думаю как разместить фон
@@ -412,9 +441,13 @@ a.hotel-name:hover {
 
 
 .rooms-search {
+    width: 458px;
+
 	line-height: 26px;
 	font-weight: bold;
 
+	margin-left: auto;
+    margin-right: auto;
 	padding: 55px 0 25px 0;
 
 	display: flex;
@@ -423,7 +456,9 @@ a.hotel-name:hover {
 
 
 .form-container {
-	width: 458px;
+	width: 568px;
+    box-shadow: 0 14px 35px -15px grey;
+    padding-bottom: 27px;
 }
 
 .rooms-search input {
@@ -437,17 +472,18 @@ a.hotel-name:hover {
 	background-color: #F2F2F2;
 
 	width: 100%;
-	margin-left: 30px;
-	padding-top: 5px;
-    padding-left: 3px;
+    padding-left: 12px;
 }
 
 
 .rooms-search label {
-	width: 145px;
-	padding-top: 8px;
+    width: 160px;
 
-	text-align: left;
+    padding-top: 6px;
+	padding-right: 8px;
+    padding-left: 3px;
+
+    text-align: left;
 }
 
 .form-column {
@@ -455,9 +491,11 @@ a.hotel-name:hover {
 
 	display: flex;
 
-	margin-bottom: 28px;
+	padding-bottom: 28px;
 
 }
+
+
 
 .form-button {
 	margin: 0;
@@ -474,76 +512,84 @@ a.hotel-name:hover {
 
 }
 
-.form-icon {
-	margin: 0;
-	padding: 0;
-	width: 22px;
-	height: 22px;
-}
-
 .form-column+.amount-people-adults {
 	width: 230px;
 }
 
 .amount-people-adults input,
 .amount-people-children input {
-	width: 35px;
+	width: 16px;
 
-	padding: 0;
-	margin: 0;
+    padding-top: 0px;
+    padding-right: 10px;
+    margin: 0;
+    margin-top: 3px;
 
-	text-align: center;
+    text-align: center;
+    min-height: 37px;;
 }
 
 .amount-people-adults label {
-	width: 100px;
-	padding-right: 23px;
+    width: 100px;
+
+    padding-right: 12px;
+    padding-top: 9px;
+    padding-left: 1px;
 
 }
 .amount-people-children label {
-	width: 40px;
-    padding-left: 47px;
+    width: 40px;
+
+    padding-left: 53px;
     padding-right: 25px;
+    padding-top: 9px;
+}
+
+.adults-sub-button,
+.children-sub-button,
+.adults-sup-button,
+.children-sup-button {
+	margin-top: 3px;
 }
 
 
-.adults-sub-button .form-icon,
-.children-sub-button .form-icon {
+.adults-sub-button,
+.children-sub-button {
 	background-image: url("../img/minus.png");
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-.adults-sub-button .form-icon:hover,
-.children-sub-button .form-icon:hover {
+.adults-sub-button:hover,
+.children-sub-button:hover {
 	background-image: url("../img/minus-hover.png");
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-.adults-sub-button .form-icon:active,
-.children-sub-button .form-icon:active {
+.adults-sub-button:active,
+.children-sub-button:active {
 	background-image: url("../img/minus-active.png");
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-.adults-sup-button .form-icon,
-.children-sup-button .form-icon {
+.adults-sup-button,
+.children-sup-button {
 	background-image: url("../img/plus.png");
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-.adults-sup-button .form-icon:hover,
-.children-sup-button .form-icon:hover {
+.adults-sup-button:hover,
+.children-sup-button:hover {
 	background-image: url("../img/plus-hover.png");
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-.adults-sup-button .form-icon:active,
-.children-sup-button .form-icon:active {
+.adults-sup-button:active,
+.children-sup-button:active {
 	background-image: url("../img/plus-active.png");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -566,20 +612,20 @@ a.hotel-name:hover {
 }
 
 .search-button {
-	padding-top: 17px;
-    padding-bottom: 16px;
+    padding-top: 14px;
+    padding-bottom: 18px;
 
-	background-color: #81B3D2;
-	
-	font: inherit;
-	font-size: 21px;
-	font-weight: bold;
-	color: #ffffff;
-	line-height: 26px;
+    background-color: #81B3D2;
 
-	border-style: none;
+    font: inherit;
+    font-size: 21px;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 26px;
 
-	width: 100%;
+    border-style: none;
+
+    width: 100%;
 }
 
 .rooms-search .search-button:last-of-type:hover,
@@ -950,10 +996,9 @@ a+.active-sort path {
 .access-hotels li {
 	border-bottom: 1px solid #e5e5e5;
 
-    height: 90px;
     padding: 29px 71px;
     padding-left: 73px;
-    padding-bottom: 31px;
+    padding-bottom: 15px;
 
     display: flex;
 }
@@ -961,6 +1006,8 @@ a+.active-sort path {
 .access-column {
 	display: flex;
 	flex-wrap: wrap;
+
+	padding-bottom: 17px;
 
 	width: 300px;
 }
@@ -1087,15 +1134,14 @@ a.rooms-book:active {
 
 .footer-container {
 	background-color: rgba(255,255,255,0.9);
-	min-height: 100px;
 
 	display: flex;
-	justify-content: space-between;
-	align-items: baseline;
+	flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
 
-	padding-top: 10px;
-    padding-bottom: 9px;
-}
+    padding-top: 35px;
+    padding-bottom: 36px;}
 
 .social-list {
 	list-style: none;
@@ -1135,7 +1181,7 @@ a.rooms-book:active {
 
 	margin: 0;
 	margin-left: 125px;
-	margin-top: 35px;
+	margin-bottom: 12px;
 
 	font-size: 21px;
 	line-height: 26px;
