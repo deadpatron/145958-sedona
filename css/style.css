@@ -52,11 +52,11 @@ input[type="radio"].visually-hidden {
 	background-image: url("../img/sedona-index.png");
 	background-repeat: no-repeat;
 	background-position: top;
-
-
 }
 
 .container .inner {
+  width: 1200px;
+  
 	padding-bottom: 0px;
 
 	font-weight: bold;
@@ -66,6 +66,14 @@ input[type="radio"].visually-hidden {
 
 	font-weight: bold;
 	line-height: 26px;
+}
+
+.filter-hotels,
+.filter-result {
+  width: 1200px;
+  
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main-navigation>a {
@@ -395,7 +403,11 @@ a.hotel-name:hover {
 .main-footer-container {
 	background-image: url("../img/map.png");
 	background-repeat: no-repeat;
-    background-position: bottom;
+  background-position: bottom;
+  
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
 }
 /*
 пока думаю как разместить фон
