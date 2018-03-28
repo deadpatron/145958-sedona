@@ -52,8 +52,6 @@ input[type="radio"].visually-hidden {
 	background-image: url("../img/sedona-index.png");
 	background-repeat: no-repeat;
 	background-position: top;
-
-
 }
 
 .container .inner {
@@ -68,6 +66,14 @@ input[type="radio"].visually-hidden {
 
 	font-weight: bold;
 	line-height: 26px;
+}
+
+.filter-hotels,
+.filter-result {
+  width: 1200px;
+  
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main-navigation>a {
