@@ -104,12 +104,12 @@ input[type="radio"].visually-hidden {
 	padding-right: 70px;
 }
 
-
 .site-navigation {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: space-between;
-	align-items: center;
+	align-items: bottom;
 
 }
 
@@ -118,11 +118,8 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation li:nth-child(4) {
-	padding-right: 55px;
+	padding-right: 59px;
 }
-
-
-
 
 .site-navigation a {
 	color: #000000;
@@ -694,8 +691,8 @@ a.hotel-name:hover {
 .checkbox {
     position: relative;
 
-    margin-bottom: 26px;
-    margin-left: 40px;
+    margin-bottom: 25px;
+    margin-left: 42px;
 }
 
 .hidden-checkbox:checked+.checkbox::before {
@@ -753,7 +750,7 @@ a.hotel-name:hover {
 }
 
 .filter-range-title {
-	margin-bottom: 9px;
+	margin-bottom: 7px;
 	margin-right: auto;
 
 	font-weight: 600;
