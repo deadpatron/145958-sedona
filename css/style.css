@@ -57,6 +57,8 @@ input[type="radio"].visually-hidden {
 }
 
 .container .inner {
+  width: 1200px;
+  
 	padding-bottom: 0px;
 
 	font-weight: bold;
@@ -395,7 +397,9 @@ a.hotel-name:hover {
 .main-footer-container {
 	background-image: url("../img/map.png");
 	background-repeat: no-repeat;
-    background-position: bottom;
+  background-position: bottom;
+  
+  width: 1200px;
 }
 /*
 пока думаю как разместить фон
