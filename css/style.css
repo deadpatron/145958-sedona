@@ -400,6 +400,8 @@ a.hotel-name:hover {
   background-position: bottom;
   
   width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
 }
 /*
 пока думаю как разместить фон
