@@ -40,11 +40,10 @@ input[type='radio'].visually-hidden {
 
 .box-shadow {
   width: 1200px;
-
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
 
- -webkit-box-shadow: 0 0 50px -20px #000;
+  -webkit-box-shadow: 0 0 50px -20px #000;
   box-shadow: 0 0 50px -20px #000;
 }
 
@@ -127,11 +126,11 @@ input[type='radio'].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
+  flex-direction: row;
+
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-pack: justify;
@@ -451,6 +450,9 @@ a.hotel-name:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 
   width: 568px;
@@ -461,9 +463,6 @@ a.hotel-name:hover {
 
   background-color: #fff;
 
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -481,19 +480,6 @@ a.hotel-name:hover {
   -webkit-box-shadow: 0 -40px 50px -20px #000;
   box-shadow: 0 -40px 50px -20px #000;
 }
-
-
-
-
-
-
-
-
-
-
-/*
-пока думаю как разместить фон
-*/
 
 .rooms-search-button {
   width: inherit;
@@ -617,7 +603,6 @@ a.hotel-name:hover {
   padding-left: 11px;
 
   text-align: center;
-  ;
 }
 
 .amount-people-adults label {
@@ -752,6 +737,9 @@ a.hotel-name:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 
   width: 165px;
@@ -762,10 +750,6 @@ a.hotel-name:hover {
   text-align: left;
 
   border: none;
-
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
 }
 
 .checkbox {
@@ -995,11 +979,10 @@ a.hotel-name:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .filter-hotels-result {
@@ -1099,6 +1082,9 @@ a+.active-sort path {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 
   margin: 0;
@@ -1107,10 +1093,6 @@ a+.active-sort path {
   list-style: none;
 
   background-color: #fff;
-
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
 }
 
 .access-hotels li {
@@ -1209,8 +1191,10 @@ a.rooms-info:active {
   background-color: #5496bd;
 }
 
+
 a.rooms-book {
   font-weight: bold;
+  line-height: 21px;
 
   min-height: 27px;
   padding: 5px 17px;
