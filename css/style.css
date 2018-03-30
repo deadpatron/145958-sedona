@@ -1113,7 +1113,7 @@ a+.active-sort path {
   display: flex;
 
   width: 300px;
-  padding-bottom: 13px;
+  padding-bottom: 15px;
 
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -1128,7 +1128,7 @@ a+.active-sort path {
   display: inline-block;
 
   width: 112px;
-  margin-bottom: 17px;
+  margin-bottom: 20px;
 
   vertical-align: bottom;
 }
