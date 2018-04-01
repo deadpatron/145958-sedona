@@ -515,7 +515,6 @@ a.hotel-name:hover {
   background-color: #503e33;
 }
 
-
 .rooms-search {
   font-weight: bold;
   line-height: 26px;
@@ -1242,6 +1241,24 @@ a.rooms-book:active {
   width: 42px;
 
   background-repeat: space;
+}
+
+.main-container {
+	position: relative;
+}
+
+.index-map {
+	position: absolute;
+	bottom: -80px;
+	left: 0px;
+
+	border: 0;
+
+	z-index: 0;
+}
+
+.show-off {
+	display: none;
 }
 
 .footer-container {
