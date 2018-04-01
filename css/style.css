@@ -39,6 +39,8 @@ input[type='radio'].visually-hidden {
 }
 
 .box-shadow {
+  position: relative;
+
   width: 1200px;
   margin-right: auto;
   margin-left: auto;
@@ -515,6 +517,25 @@ a.hotel-name:hover {
   background-color: #503e33;
 }
 
+@keyframes form-on {
+  0% {height: 0;}
+  100% {height: 394px;}
+}
+
+.form-container {
+  z-index: 10;
+
+  width: 568px;
+
+  animation-name: form-on;
+  animation-duration: 1.5s;
+  ;
+
+  background-color: #fff;
+  -webkit-box-shadow: 0 14px 35px -15px grey;
+  box-shadow: 0 14px 35px -15px grey;
+}
+
 .rooms-search {
   font-weight: bold;
   line-height: 26px;
@@ -526,29 +547,30 @@ a.hotel-name:hover {
   width: 458px;
   margin-right: auto;
   margin-left: auto;
-  padding: 55px 0 25px 0;
+  padding: 55px 0 52px 0;
 
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
-
-.form-container {
-  width: 568px;
-  padding-bottom: 27px;
-
-  -webkit-box-shadow: 0 14px 35px -15px grey;
-  box-shadow: 0 14px 35px -15px grey;
+@keyframes on-input {
+  0% {left: -1200px;}
+  100% {left: 0;}
 }
 
 .rooms-search input {
   font: inherit;
   font-size: 14px;
 
+  position: relative;
+
   width: 360px;
   margin-right: auto;
   padding-left: 15px;
 
+  animation-name: on-input;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
   text-transform: uppercase;
 
   border-style: none;
@@ -557,11 +579,16 @@ a.hotel-name:hover {
 
 
 .rooms-search label {
+  position: relative;
+
   width: 118px;
   padding-top: 6px;
   padding-right: 8px;
   padding-left: 3px;
 
+  animation-name: on-input;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
   text-align: left;
 }
 
@@ -577,11 +604,17 @@ a.hotel-name:hover {
 
 
 .form-button {
+  position: relative;
+
   width: 38px;
   height: 38px;
   margin: 0;
   padding: 0;
   padding-right: 9px;
+
+  animation-name: on-input;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
 
   border-style: none;
   background-color: #f2f2f2;
@@ -690,9 +723,15 @@ a.hotel-name:hover {
   font-weight: bold;
   line-height: 26px;
 
+  position: relative;
+
   width: 100%;
   padding-top: 14px;
   padding-bottom: 18px;
+
+  animation-name: on-input;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
 
   color: #fff;
   border-style: none;
@@ -1244,21 +1283,20 @@ a.rooms-book:active {
 }
 
 .main-container {
-	position: relative;
+  position: relative;
 }
 
 .index-map {
-	position: absolute;
-	bottom: -80px;
-	left: 0px;
+  position: absolute;
+  z-index: 0;
+  bottom: 119px;
+  left: 0;
 
-	border: 0;
-
-	z-index: 0;
+  border: 0;
 }
 
 .show-off {
-	display: none;
+  display: none;
 }
 
 .footer-container {
