@@ -529,11 +529,11 @@ a.hotel-name:hover {
 
   animation-name: form-on;
   animation-duration: 1.5s;
-  ;
 
   background-color: #fff;
   -webkit-box-shadow: 0 14px 35px -15px grey;
   box-shadow: 0 14px 35px -15px grey;
+  ;
 }
 
 .rooms-search {
