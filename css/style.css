@@ -105,8 +105,6 @@ input[type='radio'].visually-hidden {
   transform: translateX(-50%);
 }
 
-
-
 .site-navigation {
   margin: 0;
   padding: 0;
@@ -169,8 +167,6 @@ a.hotel-name:hover {
 .access-column a:active {
   color: rgba(0, 0, 0, .3);
 }
-
-
 
 .advantages-title {
   line-height: 26px;
@@ -247,7 +243,6 @@ a.hotel-name:hover {
 .features-column p:last-child {
   padding-bottom: 29px;
 }
-
 
 .main-feature {
   display: -webkit-box;
@@ -491,7 +486,6 @@ a.hotel-name:hover {
   background-color: #766357;
 }
 
-
 .rooms-search-button strong {
   font: inherit;
   font-size: 21px;
@@ -577,7 +571,6 @@ a.hotel-name:hover {
   background-color: #f2f2f2;
 }
 
-
 .rooms-search label {
   position: relative;
 
@@ -600,8 +593,6 @@ a.hotel-name:hover {
   width: 458px;
   padding-bottom: 28px;
 }
-
-
 
 .form-button {
   position: relative;
@@ -657,7 +648,6 @@ a.hotel-name:hover {
 .children-sup-button {
   margin-top: 3px;
 }
-
 
 .adults-sub-button,
 .children-sub-button {
@@ -809,8 +799,6 @@ a.hotel-name:hover {
   background-image: url('../img/checkbox-on.svg');
   background-repeat: no-repeat;
 }
-
-
 
 .hidden-checkbox+.checkbox::before {
   position: absolute;
